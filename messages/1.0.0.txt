@@ -1,0 +1,7 @@
+# LSP-Zuban
+
+LSP package for the Zuban LSP.
+
+Zuban is a high-performance Python Language Server and type checker implemented in Rust, by the author of Jedi. Zuban is 20–200× faster than Mypy, while using roughly half the memory and CPU compared to Ty and Pyrefly. It offers both a PyRight-like mode and a Mypy-compatible mode, which behaves just like Mypy; supporting the same config files, command-line flags, and error messages.
+
+This project was copied and modified from [https://github.com/sublimelsp/LSP-ruff](https://github.com/sublimelsp/LSP-ruff).

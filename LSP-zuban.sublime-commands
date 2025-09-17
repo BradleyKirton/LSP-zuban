@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Preferences: LSP-zuban Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/LSP-zuban/LSP-zuban.sublime-settings",
+            "default": "// Settings in here override those in \"LSP-zuban/LSP-zuban.sublime-settings\"\n{\n\t$0\n}\n"
+        }
+    }
+]

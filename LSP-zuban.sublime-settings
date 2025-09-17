@@ -1,0 +1,19 @@
+{
+    "initializationOptions": {
+        // https://docs.zubanls.com/en/latest/usage.html#configuration
+        "settings": {}
+    },
+    "command": [
+        "$server_path",
+        "server"
+    ],
+    "env": {
+        "PYTHONPATH": "$pythonpath",
+        "MYPYPATH": "$mypypath"
+    },
+    "schemes": [
+        "file", // regular files
+        "buffer", // in-memory buffers
+    ],
+    "selector": "source.python"
+}

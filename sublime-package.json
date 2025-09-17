@@ -1,0 +1,68 @@
+{
+  "contributions": {
+    "settings": [
+      {
+        "file_patterns": [
+          "/LSP-zuban.sublime-settings"
+        ],
+        "schema": {
+          "$id": "sublime://settings/LSP-zuban",
+          "definitions": {
+            "LspZubanSettings": {
+              "additionalProperties": false,
+              "properties": {
+                "configuration": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "default": null,
+                  "markdownDescription": "Path to a `pyproject.toml` file to use for configuration."
+                }
+              },
+            },
+            "PluginConfig": {
+              "properties": {
+                "initializationOptions": {
+                  "properties": {
+                    "settings": {
+                      "$ref": "sublime://settings/LSP-zuban#/definitions/LspZubanSettings",
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "allOf": [
+            {
+              "$ref": "sublime://settings/LSP-plugin-base"
+            },
+            {
+              "$ref": "sublime://settings/LSP-zuban#/definitions/PluginConfig"
+            }
+          ]
+        }
+      },
+      {
+        "file_patterns": [
+          "/*.sublime-project"
+        ],
+        "schema": {
+          "properties": {
+            "settings": {
+              "properties": {
+                "LSP": {
+                  "properties": {
+                    "LSP-zuban": {
+                      "$ref": "sublime://settings/LSP-zuban#/definitions/PluginConfig"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
