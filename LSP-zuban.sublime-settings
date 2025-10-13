@@ -8,8 +8,8 @@
         "server"
     ],
     "env": {
-        "PYTHONPATH": "$pythonpath",
-        "MYPYPATH": "$mypypath"
+        "PYTHONPATH": "$PYTHONPATH",
+        "MYPYPATH": "$MYPYPATH"
     },
     "schemes": [
         "file", // regular files
