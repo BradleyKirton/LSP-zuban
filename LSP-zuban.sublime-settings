@@ -7,10 +7,6 @@
         "$server_path",
         "server"
     ],
-    "env": {
-        "PYTHONPATH": "$PYTHONPATH",
-        "MYPYPATH": "$MYPYPATH"
-    },
     "schemes": [
         "file", // regular files
         "buffer", // in-memory buffers
