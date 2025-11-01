@@ -11,5 +11,5 @@
         "file", // regular files
         "buffer", // in-memory buffers
     ],
-    "selector": "source.python"
+    "selector": "source.python, text.shebang"
 }
